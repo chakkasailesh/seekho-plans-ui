@@ -41,3 +41,11 @@ svg {
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
