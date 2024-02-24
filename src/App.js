@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Header } from './components'
+import { Header, Plans } from './components'
 import './App.css'
 
 const App = () => {
@@ -21,6 +21,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
+      {appData.plans && <Plans plans={appData.plans} />}
     </div>
   )
 }

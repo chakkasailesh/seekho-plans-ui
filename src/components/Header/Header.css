@@ -9,10 +9,10 @@
   background-position: center;
   height: 235px;
   position: relative;
+  padding-top: 4rem;
 }
 
 .header-container h2 {
-  font-family: 'Roboto', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
@@ -31,7 +31,6 @@
 }
 
 .premium-summary div {
-  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,103 @@
+.coupons {
+  margin-top: 2rem;
+}
+
+.coupons-header {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.625rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.625rem;
+}
+
+.coupon {
+  display: flex;
+  flex-direction: column;
+  height: 4.75rem;
+  padding-inline: 1.375rem;
+  background-color: #1c1c1c;
+  border-radius: 0.625rem;
+}
+
+.coupon-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #3d3d3d;
+  flex-grow: 1;
+}
+
+.coupon-top > div {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.coupon-top > p {
+  font-size: 0.75rem;
+}
+
+.coupon-top > div > p {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.coupon-bottom {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.625rem;
+}
+
+.coupon-bottom p:first-child {
+  color: rgba(255, 255, 255, 0.6);
+}
+.coupon-bottom p:last-child {
+  color: #ff3d00;
+}
+
+@media screen and (min-width: 768px) {
+  .coupon {
+    height: 5.25rem;
+    padding-inline: 1.5rem;
+  }
+  .coupons-header {
+    font-size: 1rem;
+  }
+  .coupon-top svg {
+    width: 1.75rem;
+    height: 1.25rem;
+  }
+  .coupon-top > p {
+    font-size: 1rem;
+  }
+  .coupon-top > div > p {
+    font-size: 1.25rem;
+  }
+  .coupon-bottom {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .coupon {
+    height: 6rem;
+    padding-inline: 2rem;
+  }
+  .coupons-header {
+    font-size: 1.5rem;
+  }
+  .coupon-top svg {
+    width: 2rem;
+    height: 1.5rem;
+  }
+  .coupon-top > p {
+    font-size: 1.25rem;
+  }
+  .coupon-top > div > p {
+    font-size: 1.5rem;
+  }
+  .coupon-bottom {
+    font-size: 1.25rem;
+  }
+}
