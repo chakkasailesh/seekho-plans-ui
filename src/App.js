@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Header, Plans } from './components'
+import { Header, Plans, Benefits, Series, Experts } from './components'
 import './App.css'
 
 const App = () => {
@@ -22,6 +22,9 @@ const App = () => {
     <div className="app">
       <Header />
       {appData.plans && <Plans plans={appData.plans} />}
+      {appData.benefits && <Benefits benefits={appData.benefits} />}
+      {appData.series_item && <Series series={appData.series_item} />}
+      {appData.creator_item && <Experts experts={appData.creator_item} />}
     </div>
   )
 }

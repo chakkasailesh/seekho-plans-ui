@@ -36,9 +36,9 @@ const Discount = ({ coupons }) => {
                       y2="21.3333"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#37ABFF" />
-                      <stop offset="0.479167" stop-color="#FF00D6" />
-                      <stop offset="1" stop-color="#FFA800" />
+                      <stop stopColor="#37ABFF" />
+                      <stop offset="0.479167" stopColor="#FF00D6" />
+                      <stop offset="1" stopColor="#FFA800" />
                     </linearGradient>
                   </defs>
                 </svg>
