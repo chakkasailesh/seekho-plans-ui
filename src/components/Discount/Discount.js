@@ -5,7 +5,7 @@ const Discount = ({ coupons }) => {
   const [isApplied, setIsApplied] = useState(false)
   return (
     <div className="coupons">
-      <p className="coupons-header">Discount</p>
+      <p className="coupons-header">DISCOUNT</p>
       {coupons.map((coupon) => (
         <div key={coupon.id} className="coupon">
           <div className="coupon-top">
