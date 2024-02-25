@@ -8,6 +8,7 @@ import {
   Experts,
   Reviews,
   FAQ,
+  ContactUs,
 } from './components'
 import './App.css'
 
@@ -35,6 +36,7 @@ const App = () => {
       {appData.creator_item && <Experts experts={appData.creator_item} />}
       {appData.user_item && <Reviews reviews={appData.user_item} />}
       {appData.faq && <FAQ qas={appData.faq} />}
+      <ContactUs />
     </div>
   )
 }

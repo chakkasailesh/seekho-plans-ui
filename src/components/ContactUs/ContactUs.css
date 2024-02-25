@@ -1,0 +1,69 @@
+.contact-us {
+  margin-top: 1.875rem;
+  margin-inline: 1rem;
+}
+
+.contact-us > p:first-child {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 0.6875rem;
+}
+
+.contact-us textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 6.625rem;
+  width: 100%;
+  border-radius: 0.625rem;
+  padding: 0.75rem 1.125rem;
+  margin-bottom: 0.6875rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-us input::placeholder {
+  vertical-align: text-top;
+}
+
+.whatsapp {
+  background-color: #1fbe2b;
+  height: 3.375rem;
+  width: 100%;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8125rem;
+  cursor: pointer;
+}
+
+.email {
+  font-size: 0.625rem;
+  margin-block: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us {
+    margin-inline: 10rem;
+  }
+  .contact-us > p:first-child {
+    font-size: 1.5rem;
+  }
+  .email {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    margin-inline: 20rem;
+  }
+  .contact-us > p:first-child {
+    font-size: 2rem;
+  }
+  .email {
+    font-size: 1.5rem;
+  }
+}
