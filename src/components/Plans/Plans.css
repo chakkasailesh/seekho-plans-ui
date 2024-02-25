@@ -77,6 +77,34 @@
   color: #ffcc11;
   display: flex;
   align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.price-bottom {
+  color: #7d7d7d;
+  font-size: 0.625rem;
+  display: flex;
+  gap: 0.375rem;
+  align-items: center;
+}
+
+.price-bottom > p:first-child {
+  text-decoration: line-through;
+}
+
+.price-bottom > p:last-child {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.5rem;
+  background-color: #3980ff;
+  color: white;
+  padding: 0.125rem 0.25rem;
+  border-radius: 3.875rem;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
 
 .amount {
@@ -131,6 +159,13 @@
   }
   .duration {
     font-size: 0.75rem;
+  }
+  .price-bottom {
+    font-size: 1.125rem;
+  }
+  .price-bottom > p:last-child {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 

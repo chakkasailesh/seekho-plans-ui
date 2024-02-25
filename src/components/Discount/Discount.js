@@ -56,7 +56,7 @@ const Discount = ({ coupons }) => {
           <div className="coupon-bottom">
             <p>{isApplied ? 'Coupon Applied' : ''}</p>
             <p
-              style={{ color: isApplied ? 'Red' : 'Green' }}
+              style={{ color: isApplied ? 'Red' : 'Green', cursor: 'pointer' }}
               onClick={() => setIsApplied((prev) => !prev)}
             >
               {isApplied ? 'Remove' : 'Apply'}

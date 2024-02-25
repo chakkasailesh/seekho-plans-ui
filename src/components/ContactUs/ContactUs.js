@@ -72,7 +72,7 @@ const ContactUs = () => {
       <p className="email">
         Ya fir humein email karein{' '}
         <span
-          style={{ color: '#FFCC11' }}
+          style={{ color: '#FFCC11', cursor: 'pointer' }}
           onClick={() =>
             (window.location.href = 'mailto:queries@seekhoapp.com')
           }
