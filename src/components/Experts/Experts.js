@@ -2,13 +2,12 @@ import React from 'react'
 import './Experts.css'
 
 const Experts = ({ experts }) => {
-  console.log(experts)
   return (
     <div className="experts">
       <p>{experts.title}</p>
       <div>
         {experts.creator_list.map((expert) => (
-          <div className="expert">
+          <div className="expert" key={expert.name}>
             <img
               src={expert.avatar}
               alt={expert.name}

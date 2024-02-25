@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Header, Plans, Benefits, Series, Experts } from './components'
+import { Header, Plans, Benefits, Series, Experts, Reviews } from './components'
 import './App.css'
 
 const App = () => {
@@ -20,11 +20,12 @@ const App = () => {
   }, [])
   return (
     <div className="app">
-      <Header />
+      <Header title={appData.tab_banner_data?.title} />
       {appData.plans && <Plans plans={appData.plans} />}
       {appData.benefits && <Benefits benefits={appData.benefits} />}
       {appData.series_item && <Series series={appData.series_item} />}
       {appData.creator_item && <Experts experts={appData.creator_item} />}
+      {appData.user_item && <Reviews reviews={appData.user_item} />}
     </div>
   )
 }

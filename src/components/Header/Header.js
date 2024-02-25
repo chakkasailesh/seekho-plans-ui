@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <div className="header-container">
       <div className="premium-summary">
@@ -23,7 +23,7 @@ const Header = () => {
           CONTENT
         </div>
       </div>
-      <h2>1 SAAL KE LIE UNLOCK KAREIN</h2>
+      <h2>{title}</h2>
     </div>
   )
 }

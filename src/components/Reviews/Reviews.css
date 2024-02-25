@@ -1,0 +1,104 @@
+.reviews {
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+}
+
+.reviews > p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.user {
+  margin-top: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.625rem;
+}
+
+.user > img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
+.user p {
+  text-align: center;
+}
+
+.user div p:first-child {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.user div p:last-child {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.user > p {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.buttons button {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: rgba(217, 217, 217, 0.3);
+  border: none;
+}
+
+button.active {
+  background-color: rgba(217, 217, 217);
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews > p {
+    font-size: 1.5rem;
+  }
+  .user > img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .user div p:first-child {
+    font-size: 1.25rem;
+  }
+  .user div p:last-child {
+    font-size: 1rem;
+  }
+  .user > p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews > p {
+    font-size: 2rem;
+  }
+  .user > img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .user div p:first-child {
+    font-size: 1.5rem;
+  }
+  .user div p:last-child {
+    font-size: 1.125rem;
+  }
+  .user > p {
+    font-size: 1.125rem;
+  }
+}
