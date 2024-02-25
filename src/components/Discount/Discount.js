@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Discount.css'
 
 const Discount = ({ coupons }) => {
-  const [isApplied, setIsApplied] = useState(true)
+  const [isApplied, setIsApplied] = useState(false)
   return (
     <div className="coupons">
       <p className="coupons-header">Discount</p>
@@ -56,7 +56,7 @@ const Discount = ({ coupons }) => {
           <div className="coupon-bottom">
             <p>{isApplied ? 'Coupon Applied' : ''}</p>
             <p
-              style={{ color: isApplied ? 'Red' : 'Green' }}
+              style={{ color: isApplied ? 'Red' : 'Green', cursor: 'pointer' }}
               onClick={() => setIsApplied((prev) => !prev)}
             >
               {isApplied ? 'Remove' : 'Apply'}

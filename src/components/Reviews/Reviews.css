@@ -1,4 +1,5 @@
 .reviews {
+  margin-top: 0.25rem;
   background-color: #1f1f1f;
   padding: 1rem 2rem;
 }
@@ -55,6 +56,7 @@
   border-radius: 50%;
   background-color: rgba(217, 217, 217, 0.3);
   border: none;
+  cursor: pointer;
 }
 
 button.active {

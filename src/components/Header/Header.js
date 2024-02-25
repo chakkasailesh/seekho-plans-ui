@@ -6,21 +6,16 @@ const Header = ({ title }) => {
     <div className="header-container">
       <div className="premium-summary">
         <div>
-          <p>
-            10,000+
-            <br />
-            <span>SERIES</span>
-          </p>
+          <div>10,000+</div>
+          <div>SERIES</div>
         </div>
         <div>
-          NO
-          <br />
-          ADS
+          <div>NO</div>
+          <div>ADS</div>
         </div>
         <div>
-          UNLIMITED
-          <br />
-          CONTENT
+          <div>UNLIMITED</div>
+          <div>CONTENT</div>
         </div>
       </div>
       <h2>{title}</h2>

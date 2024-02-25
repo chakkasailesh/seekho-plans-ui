@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import './Plans.css'
 import Discount from '../Discount/Discount'
+import Benefits from '../Benefits/Benefits'
 
-const Plans = ({ plans }) => {
+const Plans = ({ plans, benefits }) => {
   const [selectedPlan, setSelectedPlan] = useState(0)
   const handleSelect = (index) => {
     setSelectedPlan(index)
@@ -27,7 +28,17 @@ const Plans = ({ plans }) => {
                 <span className="amount">₹{plan.discounted_price}</span>/
                 <span className="duration">{plan.duration_text}</span>
               </div>
-              {/* <div>b</div> */}
+              <div className="price-bottom">
+                <p>₹{plan.discounted_price + 300}</p>
+                <p
+                  style={{
+                    display: plan.hide_discount_percentage ? 'none' : 'flex',
+                  }}
+                >
+                  {parseInt((300 / (plan.discounted_price + 300)) * 100) +
+                    '% off'}
+                </p>
+              </div>
             </div>
           </div>
           <div>
@@ -43,6 +54,7 @@ const Plans = ({ plans }) => {
       {plans.length > 0 && (
         <Discount coupons={plans[selectedPlan].coupons ?? []} />
       )}
+      {benefits && <Benefits benefits={benefits} />}
       <div className="subscribe">
         <p>
           <span className="amount">

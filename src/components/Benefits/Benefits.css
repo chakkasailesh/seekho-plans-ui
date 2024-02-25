@@ -1,5 +1,4 @@
 .benefits {
-  margin-inline: 1rem;
   display: flex;
   flex-direction: column;
   background-color: #121111;
@@ -51,7 +50,6 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    margin-inline: 8rem;
     padding: 2rem;
     padding-top: 3rem;
     gap: 1.5rem;
@@ -74,7 +72,6 @@
 
 @media screen and (min-width: 1200px) {
   .benefits {
-    margin-inline: 16rem;
     padding: 2.5rem;
     padding-top: 3.5rem;
     gap: 2rem;

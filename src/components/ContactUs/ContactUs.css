@@ -1,6 +1,7 @@
 .contact-us {
   margin-top: 1.875rem;
   margin-inline: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .contact-us > p:first-child {
@@ -41,7 +42,6 @@
   font-size: 0.625rem;
   margin-block: 0.5rem;
   text-align: center;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
