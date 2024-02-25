@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Discount.css'
 
 const Discount = ({ coupons }) => {
-  const [isApplied, setIsApplied] = useState(true)
+  const [isApplied, setIsApplied] = useState(false)
   return (
     <div className="coupons">
       <p className="coupons-header">Discount</p>

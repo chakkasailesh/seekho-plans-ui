@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import './Plans.css'
 import Discount from '../Discount/Discount'
+import Benefits from '../Benefits/Benefits'
 
-const Plans = ({ plans }) => {
+const Plans = ({ plans, benefits }) => {
   const [selectedPlan, setSelectedPlan] = useState(0)
   const handleSelect = (index) => {
     setSelectedPlan(index)
@@ -53,6 +54,7 @@ const Plans = ({ plans }) => {
       {plans.length > 0 && (
         <Discount coupons={plans[selectedPlan].coupons ?? []} />
       )}
+      {benefits && <Benefits benefits={benefits} />}
       <div className="subscribe">
         <p>
           <span className="amount">

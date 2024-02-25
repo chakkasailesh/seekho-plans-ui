@@ -20,7 +20,7 @@
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  bottom: 26px;
+  bottom: 1.625rem;
 }
 
 .premium-summary {
